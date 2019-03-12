@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<script src="scripts/MainScript.js"></script>
+<img src="images/logo.png" alt="logo" > 
+<div class="cities">
+<h1> Exchange Term plugin tool</h1>
+</head>
+
+<body>
+
+</body>
+</html>
+
+<input type="text" name="GUIDName" value="Enter GUID" id=GUID onclick="(this.value ='')">*<br>
+<input type="text" name="CustomerName" value="Enter Name" id=CustomerNameID onclick="(this.value ='')">*<br>
+<input type="text" name="IfaName" value="Enter IFA ref" id=IfaID onclick="(this.value ='')">*<br>
+<br>
+<input type="text" name="OrgNAme" value="Enter Organisation name" id=OrgID onclick="(this.value ='')">*<br>
+<br>
+<input type="text" name="Address1" value="Enter Address Line 1" id=Add1ID onclick="(this.value ='')">*<br>
+<input type="text" name="Address2" value="Enter Address Line 2" id=Add2ID onclick="(this.value ='')"><br>
+<input type="text" name="Address3" value="Enter Address Line 3" id=Add3ID onclick="(this.value ='')"><br>
+<input type="text" name="Address4" value="Enter Address Line 4" id=Add4ID onclick="(this.value ='')"><br>
+<input type="text" name="PostCode" value="Enter Postcode" id=postID onclick="(this.value ='')">*<br>
+<br>
+<input type="text" name="Telephone" value="Enter Telephone number" id=tellID onclick="(this.value ='')">*<br>
+<input type="text" name="Email" value="Enter Email address" id=emailID onclick="(this.value ='')">*<br>
+<button onclick=GenID.type="visible">Generate HTML</button><br>
+
+<input class="Generater" type="hidden" name="GenName" value=id=GenID><br>
+
+&lt;form name="hiddenXML" id="XMLDATA" form method="post" action="http://exweb.exchange.uk.com/portal/ifatrmplug/QuoteRequestCall.asp"&gt;&lt;input type="hidden" name="XMLDATA" value=" <br />
+&lt;MESSAGE&gt;<br />
+&lt;VERSION&gt;2.1&lt;/VERSION&gt; (+GUIDName)<br />
+&lt;STYLESHEET&gt;&lt;/STYLESHEET&gt;<br />
+&lt;LOGOS&gt;NO&lt;/LOGOS&gt;<br />
+&lt;USERACCOUNT&gt;485F6703-9A02-43BA-B66F-7D4B2B732C76&lt;/USERACCOUNT&gt;<br />
+&lt;IFA_NAME&gt;jonathan convery&lt;/IFA_NAME&gt;<br />
+&lt;IFA_REF&gt;jcl&lt;/IFA_REF&gt;<br />
+&lt;ORGANISATION_NAME&gt;NIck test&lt;/ORGANISATION_NAME&gt;<br />
+&lt;ADDRESS_LINE_1&gt;272 Bath Street&lt;/ADDRESS_LINE_1&gt;<br />
+&lt;ADDRESS_LINE_2&gt;Glasgow&lt;/ADDRESS_LINE_2&gt;<br />
+&lt;ADDRESS_LINE_3&gt;&lt;/ADDRESS_LINE_3&gt;<br />
+&lt;ADDRESS_LINE_4&gt;&lt;/ADDRESS_LINE_4&gt;<br />
+&lt;POSTCODE&gt;G2 4JR&lt;/POSTCODE&gt;<br />
+&lt;TEL_NO&gt;0141 375 1904&lt;/TEL_NO&gt;<br />
+&lt;EMAIL&gt;nicholas.osborne@iress.co.uk&lt;/EMAIL&gt;<br />
+&lt;COMMISSION_DETAILS&gt;<br />
+&lt;LP&gt;<br />
+<br />
+&lt;COMMISSION_STYLE&gt;100&lt;/COMMISSION_STYLE&gt; &lt;SACRIFICE_OPTION&gt;&lt;/SACRIFICE_OPTION&gt; &lt;SACRIFICE_VALUE&gt;&lt;/SACRIFICE_VALUE&gt; <br />
+&lt;/LP&gt; <br />
+&lt;MP&gt; &lt;COMMISSION_STYLE&gt;100&lt;/COMMISSION_STYLE&gt; &lt;SACRIFICE_OPTION&gt;&lt;/SACRIFICE_OPTION&gt; &lt;SACRIFICE_VALUE&gt;&lt;/SACRIFICE_VALUE&gt; <br />
+&lt;/MP&gt; 	<br />
+&lt;CI&gt; &lt;COMMISSION_STYLE&gt;100&lt;/COMMISSION_STYLE&gt; &lt;SACRIFICE_OPTION&gt;&lt;/SACRIFICE_OPTION&gt; &lt;SACRIFICE_VALUE&gt;&lt;/SACRIFICE_VALUE&gt; <br />
+&lt;/CI&gt;<br />
+&lt;/COMMISSION_DETAILS&gt;<br />
+&lt;GROSS_INTEREST_RATE&gt;6.99&lt;/GROSS_INTEREST_RATE&gt;<br />
+&lt;COVER_INTEREST_RATE&gt;7.5&lt;/COVER_INTEREST_RATE&gt;<br />
+&lt;CM&gt;Custom message Text&lt;/CM&gt;<br />
+&lt;/MESSAGE&gt;"&gt;<br />
+<br />
+&lt;input type=submit value="Get quote now"&gt;&lt;/form&gt; <br />
+
+
+</body>
+</html>
